@@ -94,10 +94,6 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <br />
-            <input type="text" value="test@email.test" />
-            
-            <br />
             <div class="center">
                 <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
                     ActiveTabIndex="0" EnableHierarchyRecreation="true" Theme="Glass">
