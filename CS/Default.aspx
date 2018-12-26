@@ -49,7 +49,7 @@
         const group1 = "groupTabPersonal";
         const group2 = "groupTabDate";
         const group3 = "groupTabContact";
-        
+
         function onTabClick(s, e) {
             var group = null;
             var activeTabIndex = s.GetActiveTabIndex();
@@ -96,24 +96,25 @@
         <div>
             <div class="center">
                 <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
-                    ActiveTabIndex="0" EnableHierarchyRecreation="true" Theme="Glass">
+                    ActiveTabIndex="0" EnableHierarchyRecreation="true" Theme="Office365">
                     <ClientSideEvents TabClick="onTabClick" ActiveTabChanged="onActiveTabChanged" />
                     <TabPages>
                         <dx:TabPage Name="TabPersonal" Text="Personal">
                             <ContentCollection>
                                 <dx:ContentControl runat="server">
-                                    <dx:ASPxProgressBar Width="100%" ClientInstanceName="progressBar0" runat="server" ID="progressBar"></dx:ASPxProgressBar>
-                                    <dx:ASPxLabel ID="lblFirstName" runat="server" Text="First name">
-                                    </dx:ASPxLabel>
-                                    <dx:ASPxTextBox ID="txtFirstName" runat="server" Width="170px" ClientInstanceName="txtFirstName">
+                                    <dx:ASPxProgressBar Width="100%" ClientInstanceName="progressBar0" runat="server" Theme="iOS" ID="progressBar">
+                                        <IndicatorStyle>
+                                            <BorderBottom BorderColor="#F87C1D" />
+                                        </IndicatorStyle>
+
+                                    </dx:ASPxProgressBar>
+                                    <dx:ASPxTextBox Caption="First name" CaptionSettings-Position="Top" ID="txtFirstName" runat="server" Width="170px" ClientInstanceName="txtFirstName">
                                         <ValidationSettings SetFocusOnError="True" ValidationGroup="groupTabPersonal">
                                             <RequiredField IsRequired="True" ErrorText="First Name is required" />
                                         </ValidationSettings>
                                     </dx:ASPxTextBox>
                                     <hr />
-                                    <dx:ASPxLabel ID="lblLastName" runat="server" Text="Last name">
-                                    </dx:ASPxLabel>
-                                    <dx:ASPxTextBox ID="txtLastName" runat="server" Width="170px" ClientInstanceName="txtLastName">
+                                    <dx:ASPxTextBox ID="txtLastName" Caption="Last name" CaptionSettings-Position="Top" runat="server" Width="170px" ClientInstanceName="txtLastName">
                                         <ValidationSettings SetFocusOnError="true" ValidationGroup="groupTabPersonal">
                                             <RequiredField IsRequired="true" ErrorText="Last Name is required" />
                                         </ValidationSettings>
@@ -137,19 +138,18 @@
                         <dx:TabPage Name="TabDate" Text="Date">
                             <ContentCollection>
                                 <dx:ContentControl runat="server">
-                                    <dx:ASPxProgressBar Width="100%" runat="server" ClientInstanceName="progressBar1" ID="progressBar1"></dx:ASPxProgressBar>
-                                    <dx:ASPxLabel ID="lblAnyDate" runat="server" Text="AnyDate">
-                                    </dx:ASPxLabel>
-
-                                    <dx:ASPxDateEdit ID="deAnyDate" runat="server" ClientInstanceName="deAnyDate">
+                                    <dx:ASPxProgressBar Width="100%" runat="server" Theme="iOS" ClientInstanceName="progressBar1" ID="progressBar1">
+                                        <IndicatorStyle>
+                                            <BorderBottom BorderColor="#F87C1D" />
+                                        </IndicatorStyle>
+                                    </dx:ASPxProgressBar>
+                                    <dx:ASPxDateEdit ID="deAnyDate" Caption="Any Date" CaptionSettings-Position="Top" runat="server" ClientInstanceName="deAnyDate">
                                         <ValidationSettings ValidationGroup="groupTabDate" ValidateOnLeave="true" SetFocusOnError="true">
                                             <RequiredField IsRequired="true" ErrorText="Any Date is required" />
                                         </ValidationSettings>
                                     </dx:ASPxDateEdit>
                                     <hr />
-                                    <dx:ASPxLabel ID="lblStates" runat="server" Text="State">
-                                    </dx:ASPxLabel>
-                                    <dx:ASPxComboBox ID="cbStates" runat="server" ValueType="System.String" ClientInstanceName="cbStates">
+                                    <dx:ASPxComboBox ID="cbStates" runat="server" Caption="State" CaptionSettings-Position="Top" ValueType="System.String" ClientInstanceName="cbStates">
                                         <Items>
                                             <dx:ListEditItem Value="Alaska" Text="Alaska" />
                                             <dx:ListEditItem Value="Indiana" Text="Indiana" />
@@ -174,7 +174,11 @@
                         <dx:TabPage Name="TabContact" Text="Contact">
                             <ContentCollection>
                                 <dx:ContentControl runat="server">
-                                    <dx:ASPxProgressBar Width="100%" ClientInstanceName="progressBar2" runat="server" ID="progressBar2"></dx:ASPxProgressBar>
+                                    <dx:ASPxProgressBar Width="100%" ClientInstanceName="progressBar2" Theme="iOS" runat="server" ID="progressBar2">
+                                        <IndicatorStyle>
+                                            <BorderBottom BorderColor="#F87C1D" />
+                                        </IndicatorStyle>
+                                    </dx:ASPxProgressBar>
                                     <br />
                                     <center>
                                         <dx:ASPxButton runat="server" ClientInstanceName="repeatButton" Text="Repeat" AutoPostBack="false" ClientVisible="false">
@@ -184,9 +188,7 @@
                                     <dx:ASPxPanel runat="server" ID="panel" ClientInstanceName="panel">
                                         <PanelCollection>
                                             <dx:PanelContent>
-                                                <dx:ASPxLabel ID="lblEmail" runat="server" Text="E-Mail">
-                                                </dx:ASPxLabel>
-                                                <dx:ASPxTextBox ID="txtEmail" runat="server" ClientInstanceName="txtEmail" Width="170px">
+                                                <dx:ASPxTextBox ID="txtEmail" runat="server" Caption="E-Mail" CaptionSettings-Position="Top" ClientInstanceName="txtEmail" Width="170px">
                                                     <ValidationSettings SetFocusOnError="True" ValidationGroup="groupTabContact">
                                                         <RegularExpression ErrorText="Invalid E-Mail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
                                                         <RequiredField IsRequired="True" ErrorText="E-Mail is required" />
