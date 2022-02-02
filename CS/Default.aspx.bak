@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<%@ Register Assembly="DevExpress.Web.v17.2, Version=17.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -82,6 +82,12 @@
             var str = month.toString() + '/' + date.getDate().toString() + '/' + date.getFullYear().toString();
             return str;
         }
+
+        function onCheckBoxValidation(s, e) {
+            e.isValid = e.value;
+            e.errorText = "'I agree' is required";
+        }
+
     </script>
     <style>
         .center {
@@ -124,6 +130,7 @@
                                         <ValidationSettings SetFocusOnError="True" ValidationGroup="groupTabPersonal">
                                             <RequiredField IsRequired="True" ErrorText="I agree is required" />
                                         </ValidationSettings>
+                                            <ClientSideEvents Validation="onCheckBoxValidation" />
                                     </dx:ASPxCheckBox>
                                     <hr />
                                     <dx:ASPxButton ID="btnNextPersonal" runat="server" Text="Next" ClientInstanceName="btnNextPersonal"
