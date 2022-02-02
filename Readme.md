@@ -5,7 +5,8 @@
 <!-- default badges end -->
 <!-- default file list -->
 *Files to look at*:
-
+* [Default.aspx](./CS/DXWebApplication1/Default.aspx)
+* [Default.aspx.cs](./CS/DXWebApplication1/Default.aspx.cs) 
 <!-- default file list end -->
 # How to organize Wizard interface within ASPxPageControl
 <!-- run online -->
