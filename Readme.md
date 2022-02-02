@@ -6,8 +6,8 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Default.aspx](./CS/Default.aspx) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
-* [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
+* [Default.aspx](./CS/DXWebApplication1/Default.aspx)
+* [Default.aspx.cs](./CS/DXWebApplication1/Default.aspx.cs) 
 <!-- default file list end -->
 # How to organize Wizard interface within ASPxPageControl
 <!-- run online -->
