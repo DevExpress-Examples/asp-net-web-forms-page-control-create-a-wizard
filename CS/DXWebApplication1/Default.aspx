@@ -10,6 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
 
     <script type="text/javascript">
+
         function onButtonClick(s, e) {
             var indexTab = (pageControl.GetActiveTab()).index;
 
