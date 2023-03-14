@@ -3,23 +3,29 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3050)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
-* [Default.aspx](./CS/Default.aspx)
-* [Default.aspx.cs](./CS/Default.aspx.cs) 
-<!-- default file list end -->
-# How to organize Wizard interface within ASPxPageControl
+# Page Control for ASP.NET Web Forms - How to create a wizard
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e3050/)**
 <!-- run online end -->
 
+This example demonstrates how to use the [Page Control](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPageControl) to create a wizard. Each step of the wizard is a [tab page](https://docs.devexpress.com/AspNet/DevExpress.Web.TabPage) that displays various editors. Click the **Next** button at the bottom of the current page to go to the next step. Click a tab to navigate to the corresponding step.
 
-<p>The example illustrates how to organize Wizard interface within ASPxPageControl. Navigation between Wizard's step is performed via the "Next" button or by clicking the corresponding TabPage. The client-side validation occurs before each next Wizard's step - all  inputs should be populated with the corresponding values. Validation errors are grouped within the ASPxValidationSummary control. The content of each TabPage (Wizard's step) is organized within the corresponding ValidationGroup.</p><p><strong>ASP.NET MVC Version:</strong><br />
-<a href="https://www.devexpress.com/Support/Center/p/E3403">How to organize Wizard interface within PageControl Extension</a></p><p><strong>See Also:</strong><br />
-<a href="https://www.devexpress.com/Support/Center/p/E3052">How to organize Wizard interface within ASPxPageControl and ASPxMenu</a><br />
-<a href="https://www.devexpress.com/Support/Center/p/E12">Validation within a multipage container</a><br />
-<a href="https://www.devexpress.com/Support/Center/p/E334">Validation within a multipage container (on callbacks)</a></p>
+![Create a Wizard](create-a-wizard.png)
 
-<br/>
+All editors on a page are in the same [validation group](https://docs.devexpress.com/AspNet/DevExpress.Web.ValidationSettings.ValidationGroup). Before you go to the next step, the [Validation Summary](https://docs.devexpress.com/AspNet/11626/components/data-editors/validationsummary) control validates values of the editors that belong to the current page's group and displays all errors in one block.
 
+## Files to Review
 
+* [Default.aspx](./CS/Default.aspx)
+* [Default.aspx.cs](./CS/Default.aspx.cs) 
+
+## Documentation
+
+[How to: Validate a Group of Editors](https://docs.devexpress.com/AspNet/11132/components/data-editors/common-concepts/validation/examples/how-to-validate-a-group-of-editors)
+
+## More Examples
+
+- [Page Control for ASP.NET MVC - How to create a Wizard](https://github.com/DevExpress-Examples/how-to-organize-wizard-interface-within-pagecontrol-extension-e3403)
+- [Page and Menu Controls for ASP.NET Web Forms - How to create a Wizard](https://github.com/DevExpress-Examples/how-to-organize-wizard-interface-within-aspxpagecontrol-and-aspxmenu-e3052)
+- [Page Control for ASP.NET Web Forms - How to validate editor values](https://github.com/DevExpress-Examples/validation-within-a-multi-page-container-e12)
+- [Page Control for ASP.NET Web Forms - How to validate editor values on callbacks](https://github.com/DevExpress-Examples/validation-within-a-multipage-container-on-callbacks-e334)
