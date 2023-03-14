@@ -7,7 +7,7 @@
 **[[Run Online]](https://codecentral.devexpress.com/e3050/)**
 <!-- run online end -->
 
-This example demonstrates how to use the [Page Control](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPageControl) to create a wizard. Each step of the wizard is a [tab page](https://docs.devexpress.com/AspNet/DevExpress.Web.TabPage) that displays various editors. Click the **Next** button at the bottom of the current page to go to the next step. Click a tab to navigate to the corresponding step.
+This example demonstrates how to use the [Page Control](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPageControl) to create a wizard. Each step of the wizard is a [tab page](https://docs.devexpress.com/AspNet/DevExpress.Web.TabPage) that displays various editors. Click the **Next** button at the bottom of the current page to go to the next step. Click the **Personal**, **Date**, or **Contact** tab to navigate to the corresponding step.
 
 ![Create a Wizard](create-a-wizard.png)
 
@@ -20,7 +20,7 @@ All editors on a page are in the same [validation group](https://docs.devexpress
 
 ## Documentation
 
-[How to: Validate a Group of Editors](https://docs.devexpress.com/AspNet/11132/components/data-editors/common-concepts/validation/examples/how-to-validate-a-group-of-editors)
+[How to Validate a Group of Editors](https://docs.devexpress.com/AspNet/11132/components/data-editors/common-concepts/validation/examples/how-to-validate-a-group-of-editors)
 
 ## More Examples
 
