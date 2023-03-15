@@ -11,9 +11,9 @@ This example demonstrates how to use the [Page Control](https://docs.devexpress.
 
 ![Create a Wizard](create-a-wizard.png)
 
-In the example, a step is a [tab page](https://docs.devexpress.com/AspNet/DevExpress.Web.TabPage) that displays several fields. Mandatory fields are marked with an asterisk. Fill in the fields and click the **Next** button at the bottom of the current page to proceed to the next step. Click the **Personal**, **Date**, or **Contact** tab to navigate to the corresponding step.
+In the example, every wizard step is a [tab page](https://docs.devexpress.com/AspNet/DevExpress.Web.TabPage) that displays multiple fields. Mandatory fields are marked with an asterisk. You need to fill in the mandatory fields to move forward but you can keep them empty to move backwards. Click the **Next** button at the bottom of the current page to proceed to the next step, or click the **Personal**, **Date**, or **Contact** tab to navigate to the corresponding step.```
 
-Before you proceed to the next step, the [Validation Summary](https://docs.devexpress.com/AspNet/11626/components/data-editors/validationsummary) control validates values of the editors displayed on the current page and shows all validation errors in one block. Fix the errors to move forward.
+Before you proceed to the next step, the [Validation Summary](https://docs.devexpress.com/AspNet/11626/components/data-editors/validationsummary) control validates values of the editors displayed on the current page and shows all validation errors. Fix the errors to move forward.
 
 ## Files to Review
 
