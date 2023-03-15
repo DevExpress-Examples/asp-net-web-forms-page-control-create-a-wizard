@@ -7,9 +7,11 @@
 **[[Run Online]](https://codecentral.devexpress.com/e3050/)**
 <!-- run online end -->
 
-This example demonstrates how to use the [Page Control](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPageControl) to create a wizard interface. In the wizard, a step is a [tab page](https://docs.devexpress.com/AspNet/DevExpress.Web.TabPage) that displays several fields. Mandatory fields are marked with an asterisk. Fill in the fields and click the **Next** button at the bottom of the current page to proceed to the next step. Click the **Personal**, **Date**, or **Contact** tab to navigate to the corresponding step.
+This example demonstrates how to use the [Page Control](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPageControl) to create a wizard interface.
 
 ![Create a Wizard](create-a-wizard.png)
+
+In the example, a step is a [tab page](https://docs.devexpress.com/AspNet/DevExpress.Web.TabPage) that displays several fields. Mandatory fields are marked with an asterisk. Fill in the fields and click the **Next** button at the bottom of the current page to proceed to the next step. Click the **Personal**, **Date**, or **Contact** tab to navigate to the corresponding step.
 
 Before you proceed to the next step, the [Validation Summary](https://docs.devexpress.com/AspNet/11626/components/data-editors/validationsummary) control validates values of the editors displayed on the current page and shows all validation errors in one block. Fix the errors to move forward.
 
@@ -20,7 +22,7 @@ Before you proceed to the next step, the [Validation Summary](https://docs.devex
 
 ## Documentation
 
-[How to Validate a Group of Editors](https://docs.devexpress.com/AspNet/11132/components/data-editors/common-concepts/validation/examples/how-to-validate-a-group-of-editors)
+* [How to Validate a Group of Editors](https://docs.devexpress.com/AspNet/11132/components/data-editors/common-concepts/validation/examples/how-to-validate-a-group-of-editors)
 
 ## More Examples
 
