@@ -13,7 +13,7 @@ This example demonstrates how to use the [Page Control](https://docs.devexpress.
 
 In the wizard, a step is a [tab page](https://docs.devexpress.com/AspNet/DevExpress.Web.TabPage) that displays several editors. Click the **Next** button at the bottom of the current page to proceed to the next step. Click the **Personal**, **Date**, or **Contact** tab to navigate to the corresponding step.
 
-All editors on a page are in the same [validation group](https://docs.devexpress.com/AspNet/DevExpress.Web.ValidationSettings.ValidationGroup). Before you proceed to the next step, the [Validation Summary](https://docs.devexpress.com/AspNet/11626/components/data-editors/validationsummary) control validates values of the editors that belong to the current page's group and displays all errors in one block. Fix the errors to move forward.
+Before you proceed to the next step, the [Validation Summary](https://docs.devexpress.com/AspNet/11626/components/data-editors/validationsummary) control validates values of the editors displayed on the current page and shows all validation errors in one block. Fix the errors to move forward.
 
 ## Files to Review
 
