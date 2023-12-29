@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Page Control for ASP.NET Web Forms - How to create a wizard interface
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128564818/)**
-<!-- run online end -->
 
 This example demonstrates how to use the [Page Control](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPageControl) to create a wizard interface.
 
