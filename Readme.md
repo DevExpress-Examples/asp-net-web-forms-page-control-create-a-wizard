@@ -10,9 +10,6 @@
 * [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
 <!-- default file list end -->
 # How to organize Wizard interface within ASPxPageControl
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128564818/)**
-<!-- run online end -->
 
 
 <p>The example illustrates how to organize Wizard interface within ASPxPageControl. Navigation between Wizard's step is performed via the "Next" button or by clicking the corresponding TabPage. The client-side validation occurs before each next Wizard's step - all  inputs should be populated with the corresponding values. Validation errors are grouped within the ASPxValidationSummary control. The content of each TabPage (Wizard's step) is organized within the corresponding ValidationGroup.</p><p><strong>ASP.NET MVC Version:</strong><br />
