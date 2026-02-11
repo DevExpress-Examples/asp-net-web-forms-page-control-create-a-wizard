@@ -30,7 +30,7 @@ Before you proceed to the next step, the [Validation Summary](https://docs.devex
 - [Page Control for ASP.NET Web Forms - How to validate editor values](https://github.com/DevExpress-Examples/validation-within-a-multi-page-container-e12)
 - [Page Control for ASP.NET Web Forms - How to validate editor values on callbacks](https://github.com/DevExpress-Examples/validation-within-a-multipage-container-on-callbacks-e334)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-page-control-create-a-wizard&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-page-control-create-a-wizard&~~~was_helpful=no)
 
